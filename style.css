@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+    margin:0;
+}
+
+body {
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.dropdown-content {
+    text-decoration: none;
+    display:none;
+    position:absolute;
+    border-color: solid rgb(101, 153, 168) 3px;
+
+}
+
+.dropdown-content a {
+    color:black;
+    text-decoration:none;
+    display:block;
+    padding:10px 10px 10px 10px;
+
+}
+
+
+
+.dropdown-content a:hover {
+    background-color:rgb(182, 227, 241);
+    border-radius:15px 15px 15px 15px;
+    width:100%;
+
+}
+
+.dropdown {
+    border-color:rgb(101, 153, 168);
+    transition: background-color 1s;
+    color: black;
+    right:20px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display:block;
+    position:fixed;
+    right:0px;
+    margin-top:66px;
+    border: solid rgb(152, 200, 214) 3px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px;
+    background-color: rgb(152, 200, 214);
+    padding:10px 30px 10px 30px;
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+    font-size:16px;
+
+}
+
+.downloadbtn {
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+    border-bottom-left-radius: 2cm; 
+    border-bottom-right-radius: 2cm;
+    padding: 20px 100px 20px 100px;
+    margin: 5px 20px 0px 20px;
+    background-color:rgb(182, 227, 241);
+    border: solid rgb(152, 200, 214) 3px;
+    transition: background-color 1s;
+    color: black;
+    font-weight:bold;
+    width:fit-content;
+ 
+}
+
+.downloadbtn:hover {
+    background-color: rgb(152, 200, 214);
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+    cursor: pointer;
+
+}
+
+
+.dropbtn:hover {
+    text-decoration:none;
+}
+
+header {
+    padding-bottom:1px;
+    background-color:rgb(182, 227, 241);
+    position: fixed;
+    top:0;
+    width:100%;
+    box-shadow: 0px 0px 80px rgb(101, 153, 168);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.dropbtn {
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+    border-bottom-left-radius: 2cm; 
+    border-bottom-right-radius: 2cm;
+    padding: 15px 100px 15px 100px;
+    margin: 15px 20px 0px 20px;
+    float:right;
+    background-color:rgb(182, 227, 241);
+    border: solid rgb(152, 200, 214) 3px;
+    transition: background-color 1s;
+    color: black;
+    width:fit-content;
+    font-size: 18px;
+
+}
+
+.dropbtn-1 {
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+    border-bottom-left-radius: 2cm; 
+    border-bottom-right-radius: 2cm;
+    padding: 15px 100px 15px 100px;
+    margin: 15px 20px 0px 20px;
+    text-align: center;
+    background-color:rgb(182, 227, 241);
+    border: solid rgb(152, 200, 214) 3px;
+    transition: background-color 1s;
+    color: black;
+    width:fit-content;
+    font-size: 18px;
+
+}
+
+.dropbtn-2 {
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+    border-bottom-left-radius: 2cm; 
+    border-bottom-right-radius: 2cm;
+    padding: 15px 100px 15px 100px;
+    margin: 15px 20px 0px 20px;
+    text-align:center;
+    background-color:rgb(182, 227, 241);
+    border: solid rgb(152, 200, 214) 3px;
+    transition: background-color 1s;
+    color: black;
+    width:fit-content;
+    font-size: 18px;
+
+}
+
+.dropbtn-1:hover {
+    cursor:pointer;
+    background-color: rgb(152, 200, 214);
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+
+}
+
+.dropbtn-2:hover {
+    cursor:pointer;
+    background-color: rgb(152, 200, 214);
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+
+}
+
+.dropbtn:hover {
+    cursor:pointer;
+    background-color: rgb(152, 200, 214);
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+    
+}
+
+
+
+#sql-logo {
+    width: 120px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    float:left;
+
+}
+
+#watermark-1 {
+    position:absolute;
+    opacity:0.5;
+    color:rgb(202, 199, 199);
+    transform: rotate(-30deg);
+}
+
+.ändern-tabelle-watermark-1 p {
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+main {
+    margin-left: 210px;
+    margin-right: 210px;
+    border:solid rgb(152, 200, 214) 10px;
+    box-shadow: 0px 10px 80px 15px rgb(152, 200, 214); ;
+    background-color: rgb(152, 200, 214);
+    margin-top:90px;
+}
+
+#was-ist-sql {
+    text-align: center;
+}
+
+#hr-1 { 
+    border:solid rgb(139, 173, 197) 3px;
+    border-radius:10px 10px 10px 10px;
+    width:100%;
+}
+
+
+#relationale-datenbanken {
+    text-align:center;
+}
+
+.n-abschnitt {
+    border: rgb(111, 198, 219);
+}
+
+
+footer {
+    
+    background-color:rgb(182, 227, 241);
+    position: static;
+    box-shadow: 0px 0px 80px rgb(101, 153, 168);
+    bottom:0px;
+    margin:0;
+    padding: 0 0 0 20px;  
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width:100%;
+
+
+}
+
+.copyright {
+    bottom:0px;
+    text-align: center;
+    padding:0;
+    font-size: 13px;
+    margin-top:20px;
+
+}
+
+
+#instagram-logo {
+    width: 65px;
+    float:right;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+#instagram-logo:hover {
+    cursor:pointer;
+    box-shadow: 0px 0px 50px rgb(101, 153, 168);
+
+}
+
+
+.kontaktinfos-content p {
+    margin: 7px;
+}
+
+.kontaktinfos-content {
+    margin-left: 25px;
+}
+
+#kontaktinfos-titel {
+    text-decoration: underline;
+    padding-top: 50px;
+    margin-top:0px;
+    margin-left:30px;
+    text-align: justify;
+}
+
+.kontaktinfos div.links {
+    display: flex;
+    flex-direction: row;
+}
+
+#links-titel {
+    margin-left:30px;
+    text-align: justify;
+}
+
+
+
+main h1,h3,h4  {
+    text-align: center;
+    margin:0 auto;
+}
+
+div {
+    text-align: left;
+    margin:0 auto;
+}
+
+h1 {
+    display:block;
+}
+
+main div {
+    width:600px;
+}
+
+main img {
+margin:0 auto;
+text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 80px;
+}
+
+h4 {
+    margin-top: 100px; 
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+.bildflaechen {
+    display:flex;
+    flex-direction:row;
+}
+#u187 {
+    margin-right: 20px;
+}
+
+.texteingabe-abschnitt {
+    margin:0 auto;
+}
+
+.search {
+    float:right;    
+    margin-top:20px;
+}
+
+.suchbegriff {
+    border-top-left-radius: 2cm;
+    border-bottom-left-radius: 2cm; 
+    padding: 15px 100px 15px 100px;
+    border-style:none;
+    margin-right:0;
+}
+
+.suchen {
+    border-top-right-radius: 2cm;
+    border-bottom-right-radius: 2cm;
+    padding: 15px 100px 15px 100px;
+    border-style:none;
+    margin-left:0;
+
+}
