@@ -85,7 +85,8 @@
                 <p><b>Beispiel:</b></p>
             </div>
 
-            <img src="bilder/Formular-Beispiel-1a.png" alt="Beispiel-Formular" class="formular-beispiel" class="alle-img" />
+            <img src="bilder/Formular-Beispiel-1a.png" alt="Beispiel-Formular" class="alle-img" class="alle-img"
+                id="formulare-beispiel" />
 
 
             <h3>Formularsteuerelemente</h3>
@@ -254,8 +255,8 @@
                 </tr>
             </table>
         </div>
-       
-       
+
+
         <h1>GET vs POST</h1>
         <hr class="hr-1" />
         <div class="get-post">
@@ -266,42 +267,91 @@
         <hr class="hr-1">
         <div class="javascript-eifuehrung">
             <h3>Javascript mit HTML-Dateien verknüpfen</h3>
-            <p>Mithilfe des HTML-Elements &#x3C;script&#x3E; kann mitgeteilt werden, dass der Code in einem Skript 
+            <p>Mithilfe des HTML-Elements &#x3C;script&#x3E; kann mitgeteilt werden, dass der Code in einem Skript
                 steht. Das Attribut src dieses Elements gibt an, wo die JavaScript-Datei abgespeichert ist.
             </p>
-            <br/>
+            <br />
             <p><b>Beispiel</b></p>
 
 
         </div>
-        <img src="bilder/js-einbinden.png" alt="JS-Einbinden" class="js-einbinden"/>
+        <img src="bilder/js-einbinden.png" alt="JS-Einbinden" class="js-einbinden" />
 
-    
+
         <div class="script-platzieren">
             <h3>Skripts auf der Seite platzieren</h3>
-            <p>Hin und wieder wird JavaScript-Code auch auf der HTML-Seite zwischen &#x3C;script&#x3E;- und &#x3C;/script&#x3E;-Tags sehen.
+            <p>Hin und wieder wird JavaScript-Code auch auf der HTML-Seite zwischen &#x3C;script&#x3E;- und
+                &#x3C;/script&#x3E;-Tags sehen.
                 (Es ist jedoch besser, ihn in einer eigenen Datei unterzubringen.)
             </p>
             <p><b>Beispiel</b></p>
         </div>
-        <img src="bilder/script-in-html.png" alt="Script innerhalb HTML" class="alle-img"/>
+        <img src="bilder/script-in-html.png" alt="Script innerhalb HTML" class="alle-img" />
 
-        <div class="objekte-methoden">
-            <h3>Objekte & Methoden verwenden</h3>
-            <p><b>Beispiel</b></p>
 
+        <div class="objekte-haupt">
+            <div class="objekte-methoden">
+                <h3>Objekte & Methoden verwenden</h3>
+                <p><b>Beispiel</b></p>
+
+            </div>
+            <img src="bilder/document.write.png" alt="Objekte & Methoden verwenden" class="alle-img" />
+
+            <div>
+                <p>Das document-Objekt steht für die gesamte Webseite. Alle Browser implementieren
+                    dieses Objekt. Man kann es verwenden, indem man einfach seinen Namen nennt.
+                </p>
+                <p>
+                    Die Methode write() des document-Objekts erlaubt es, neuen Inhalt auf die Seite zu schreiben,
+                    und zwar an die Stelle, an der sich das Element &#x3C;script&#x3E; befindet.
+                </p>
+                <p>
+                    Das document-Object verfügt pber mehrere Methoden und Eigenschaften. Sie werden als
+                    "Member" des Objekts bezeichnet.<br />
+                    Um auf einen Member eines Objekts zuzugreifen, hängt man an den Objektnamen einen Punkt und dann
+                    den Namen des Members an. Der Punkt wird als "Memberoperator" bezeichnet.
+                </p>
+            </div>
         </div>
-        <img src="bilder/document.write.png" alt="Objekte & Methoden verwenden" class="alle-img"/>
 
-        <p>Das document-Objekt steht für die gesamte Webseite. Alle Browser implementieren 
-            dieses Objekt. Man kann es verwenden, indem man einfach seinen Namen nennt.
-        </p>
-        <p>
-            Die Methode write() des document-Objekts erlaubt es, neuen Inhalt auf die Seite zu schreiben,
-        </p>
+        <div class="variable-erstellen">
+            <h3>Variable erstellen</h3>
+            <p>Eine Variable ist mit der Klassierung in HTML gut zu vergleichen. Bei der Varible folgt als
+                aller Erstes das Schlüsselwort für die Variable selber. Danach folgt der Variablenname, welcher nach
+                eigenen Gunsten bestimmt werden kann.
+            </p>
+            <p>Beispiel:</p>
+        </div>
+        <img src="bilder/var-beispiel.png" alt="variable-erstellen" class="alle-img" />
+        <br />
 
+        <div class="variable-erstellen-2">
+            <p>Um den Wert einer Variable zu definieren, muss der Name des Attributs angegeben werden.
+                Danach folgt der Wert. Sobald der Wert Buchstaben enthält, muss er in "Anführungszeichen" definiert
+                werden.
+                Wie bei jedem anderen Code auch wird hier mit einem ";" abgeschlossen.
+            </p>
+            <p>Beispiel</p>
+        </div>
+        <img src="bilder/var-beispiel-2.png" alt="var Beispiel = 3;" class="alle-img" />
 
+        <div class="var-datentypen">
+            <h4>Datentypen der Variablen</h4>
+            <p>Man unterscheidet zwischen drei Arten: nummerische-, String- und Boolesche Daten.
+                Der nummerische Datentyp ist für die Zahlen da. Die Strings bestehen aus Buchstaben und anderen Zeichen.
+                Anderst hingegegen können boolesche Daten nur true oder false sein.
 
+            </p>
+        </div>
+        <img src="bilder/datentypen-var.png" alt="Datentypen der Variablen" class="alle-img"/>
+
+        <div class="variablen-ändern">
+            <p>Es könnte sein, dass nach einiger Weile die Werte der Attribute geändert werden sollten. Hierfür muss keine 
+                komplizierte Lösung gesucht werden, sondern man kann das Attribut nochmals anschreiben und den neuen Wert 
+                eingeben.<br/>
+                Sollte es mehrere Werte schon gehabt haben und man möchte nur z.B. den dritten Wert ändern, muss dies angegeben werden.
+            </p>
+        </div>
 
 
     </main>
@@ -338,9 +388,9 @@
     </footer>
 
     <script>
-    $(".js-einbinden").focus(function css(){
-        CSSStyleSheet(screenTop);
-    })
+        $(".js-einbinden").focus(function css() {
+            CSSStyleSheet(screenTop);
+        })
     </script>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>

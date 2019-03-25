@@ -14,6 +14,7 @@ body {
 }
 
 
+
 .erster-titel  {
     margin-top: 80px;
 }
@@ -57,10 +58,10 @@ body {
     right:0px;
     margin-top:66px;
     border: solid rgb(152, 200, 214) 3px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px; 
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
     background-color: rgb(152, 200, 214);
     padding:10px 30px 10px 30px;
     box-shadow: 0px 0px 50px rgb(101, 153, 168);
@@ -106,19 +107,18 @@ header {
 }
 
 .dropbtn {
-    border-top-left-radius: 2cm;
-    border-top-right-radius: 2cm;
-    border-bottom-left-radius: 2cm; 
-    border-bottom-right-radius: 2cm;
-    padding: 15px 100px 15px 100px;
-    margin: 15px 20px 0px 20px;
+    border-radius: 15px;
+    padding: 14px 100px 14px 100px;
+    margin: 17px 20px 0px 20px;
     float:right;
     background-color:rgb(182, 227, 241);
     border: solid rgb(152, 200, 214) 3px;
-    transition: background-color 1s;
     color: black;
     width:fit-content;
-    font-size: 18px;
+    font-weight: bold;
+    animation: bounceInDown 900ms 200ms ease-in-out both;
+    z-index: 990;
+
 
 }
 
@@ -177,6 +177,12 @@ header {
     
 }
 
+#formulare-beispiel {
+    display:flex;
+    justify-content: center;
+    width:600px;
+}
+
 
 
 #sql-logo {
@@ -204,7 +210,7 @@ main {
     margin-left: 450px;
     margin-right: 450px;
     border:solid rgb(152, 200, 214) 10px;
-    box-shadow: 0px 10px 80px 15px rgb(152, 200, 214); ;
+    box-shadow: 0px 0px 170px 15px rgb(152, 200, 214);
     background-color: rgb(152, 200, 214);
     margin-top:50px;
 }
@@ -352,26 +358,32 @@ h4 {
 }
 
 .suchbegriff {
-    border-top-left-radius: 2cm;
-    border-bottom-left-radius: 2cm; 
-    padding: 15px 100px 15px 100px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    padding: 15px 70px 15px 70px;
     border-style:none;
     margin-right:0;
 }
 
 .suchen {
-    border-top-right-radius: 2cm;
-    border-bottom-right-radius: 2cm;
-    padding: 15px 100px 15px 100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px 40px 15px 40px;
     border-style:none;
     margin-left:0;
+
+}
+
+.suchen:focus {
+    border-top-right-radius: 2cm;
+    border-bottom-right-radius: 2cm;
 
 }
 
 .alle-img {
     display:flex;
     justify-content: center;
-    border-radius:20px;
+    border-radius:10px;
 
 }
 
@@ -390,3 +402,109 @@ h4 {
 .tg .tg-0o9u{font-family: 'Rubik', sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:left}
 .tg .tg-5j0w{border-color:#a0a7a5;text-align:left;vertical-align:top}
 
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons a:not(.active) {
+ box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+ background-image: linear-gradient(#3b2751, #271739);
+ text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+.buttons a:not(.active):hover,
+.buttons a:not(.active):focus {
+ transition: color 200ms linear, text-shadow 500ms linear;
+ color: #caadd2;
+ text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+
+.buttons a:not(.active):active {
+ color: #e4e3ce !important
+}
+
+.buttons a.active,
+.buttons a:active {
+ box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #170c22, 0 2px 1px 0 rgba(121, 65, 135, 0.5), inset 0 0 4px 3px rgba(15, 8, 22, 0.2);
+ background-image: linear-gradient(#1f132e, #311d47);
+ text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+ color: #e4e3ce;
+}
+
+.buttons a.active:before,
+.buttons a:active:before {
+ position: absolute;
+ display: block;
+ content: "";
+ width: 1px;
+ height: 36px;
+ top: 1px;
+ left: -2px;
+ background-image: linear-gradient(rgba(91, 35, 105, 0), #5b2369 41%, #5b2369 59%, rgba(91, 35, 105, 0));
+ box-shadow: -2px 0 6px 0 #5b2369;
+}
+
+.buttons a.active:after,
+.buttons a:active:after {
+ position: absolute;
+ display: block;
+ content: "";
+ width: 1px;
+ height: 36px;
+ top: 1px;
+ right: -2px;
+ background-image: linear-gradient(rgba(91, 35, 105, 0), #5b2369 41%, #5b2369 59%, rgba(91, 35, 105, 0));
+ box-shadow: 2px 0 6px 0 #5b2369;
+}
+
+.buttons a.active {
+ z-index: 1000
+}
+
+.buttons a:active {
+ z-index: 999
+}
+
+.buttons a:last-of-type {
+ border-radius: 0 7px 7px 0;
+}
+
+.buttons a:first-of-type {
+ border-radius: 7px 0 0 7px;
+ left: 0;
+}
+
+.buttons a:nth-of-type(2) {
+ left: 51px
+}
+
+.buttons a:nth-of-type(3) {
+ left: 102px
+}
+
+.buttons a:nth-of-type(4) {
+ left: 153px
+}
+
+.buttons a:nth-of-type(5) {
+ left: 204px
+}
+
+.buttons a:nth-of-type(6) {
+ left: 255px
+}
+
+.buttons a:nth-of-type(7) {
+ left: 306px
+}
+
+.buttons a:nth-of-type(8) {
+ left: 357px
+}
