@@ -20,3 +20,6 @@ Beispiel = 3;
 //BOOLESCHE DATEN
 //---------------------
 true
+
+
+
