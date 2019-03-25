@@ -193,6 +193,15 @@ header {
 
 }
 
+.code-gleich {
+    background-color:rgb(125, 171, 185);
+    padding:20px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #watermark-1 {
     position:absolute;
     opacity:0.5;
