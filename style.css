@@ -9,6 +9,10 @@ body {
 }
 
 
+.erster-titel  {
+    margin-top: 80px;
+}
+
 .dropdown-content {
     text-decoration: none;
     display:none;
@@ -194,23 +198,25 @@ header {
 }
 
 main {
-    margin-left: 210px;
-    margin-right: 210px;
+    margin-left: 450px;
+    margin-right: 450px;
     border:solid rgb(152, 200, 214) 10px;
     box-shadow: 0px 10px 80px 15px rgb(152, 200, 214); ;
     background-color: rgb(152, 200, 214);
-    margin-top:90px;
+    margin-top:50px;
 }
 
 #was-ist-sql {
     text-align: center;
 }
 
-#hr-1 { 
+.hr-1 { 
     border:solid rgb(139, 173, 197) 3px;
     border-radius:10px 10px 10px 10px;
     width:100%;
 }
+
+
 
 
 #relationale-datenbanken {
@@ -289,19 +295,12 @@ footer {
 
 
 
-main h1,h3,h4  {
-    text-align: center;
-    margin:0 auto;
-}
 
 div {
     text-align: left;
     margin:0 auto;
 }
 
-h1 {
-    display:block;
-}
 
 main div {
     width:600px;
@@ -314,6 +313,11 @@ text-align: center;
 
 h1 {
     margin-bottom: 40px;
+    color:rgb(139, 173, 197);
+    font-size: 28px;
+    margin:0 auto;
+    margin-top:200px;
+
 }
 
 h3 {
@@ -362,3 +366,10 @@ h4 {
     margin-left:0;
 
 }
+
+.tg  {border-collapse:collapse;border-spacing:0;margin-top:50px;display:flex;justify-content: center;}
+.tg td{font-family: 'Rubik', sans-serif; font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family: 'Rubik', sans-serif; font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-u6bb{font-family: 'Rubik', sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:center;vertical-align:top}
+.tg .tg-0o9u{font-family: 'Rubik', sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:left}
+.tg .tg-5j0w{border-color:#a0a7a5;text-align:left;vertical-align:top}
