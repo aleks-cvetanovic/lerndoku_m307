@@ -85,12 +85,12 @@
                 <p><b>Beispiel:</b></p>
             </div>
 
-            <img src="bilder/Formular-Beispiel-1a.png" alt="Beispiel-Formular" class="formular-beispiel" />
+            <img src="bilder/Formular-Beispiel-1a.png" alt="Beispiel-Formular" class="formular-beispiel" class="alle-img" />
 
 
             <h3>Formularsteuerelemente</h3>
             <p>Es gibt verschiedene Arten von Formularsteuerelementen, mit denen man
-                von der Besuchern einer Webseite Informationen einholen kann.
+                von den Besuchern einer Webseite Informationen einholen kann.
             </p>
 
             <div class="texteingabe-abschnitt">
@@ -192,7 +192,7 @@
                 darzustellen.
             </p>
             <p><b>Beispiel:</b></p>
-            <img src="bilder/flussdiagramm.gif" />
+            <img src="bilder/flussdiagramm.gif" class="alle-img" />
         </div>
         <h1>Nötige Grundkenntnisse fürs Erstellen eines Formulares</h1>
         <hr class="hr-1">
@@ -264,17 +264,27 @@
         </div>
         <h1>Javascript</h1>
         <hr class="hr-1">
-        <div class="javascript">
+        <div class="javascript-eifuehrung">
             <h3>Javascript mit HTML-Dateien verknüpfen</h3>
             <p>Mithilfe des HTML-Elements &#x3C;script&#x3E; kann mitgeteilt werden, dass der Code in einem Skript 
                 steht. Das Attribut src dieses Elements gibt an, wo die JavaScript-Datei abgespeichert ist.
             </p>
-            <p>Beispiel</p>
-            <img src="bilder/"
+            <br/>
+            <p><b>Beispiel</b></p>
 
 
         </div>
+        <img src="bilder/js-einbinden.png" alt="JS-Einbinden" class="js-einbinden"/>
 
+    
+        <div class="script-platzieren">
+            <h3>Skripts auf der Seite platzieren</h3>
+            <p>Hin und wieder wird JavaScript-Code auch auf der HTML-Seite zwischen &#x3C;script&#x3E;- und &#x3C;/script&#x3E;-Tags sehen.
+                (Es ist jedoch besser, ihn in einer eigenen Datei unterzubringen.)
+            </p>
+            <p><b>Beispiel</b></p>
+        </div>
+        <img src="bilder/script-in-html.png" alt="Script innerhalb HTML" class="alle-img"/>
 
 
 
@@ -313,7 +323,14 @@
 
     </footer>
 
+    <script>
+    $(".js-einbinden").focus(function css(){
+        CSSStyleSheet(screenTop);
+    })
+    </script>
 
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lerndoku.js"></script>
 </body>
 
 </html>
