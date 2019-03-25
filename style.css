@@ -292,7 +292,7 @@ footer {
 
 .kontaktinfos div.links {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 #links-titel {
