@@ -217,12 +217,13 @@ header {
 }
 
 main {
-    margin-left: 450px;
-    margin-right: 450px;
+    margin:0 auto;
+    max-width: 1300px;
     border:solid rgb(152, 200, 214) 10px;
     box-shadow: 0px 0px 170px 15px rgb(152, 200, 214);
     background-color: rgb(152, 200, 214);
     margin-top:50px;
+    padding-bottom: 100px;
 }
 
 #was-ist-sql {
@@ -307,7 +308,6 @@ footer {
 
 #links-titel {
     margin-left:30px;
-    text-align: justify;
 }
 
 
@@ -518,3 +518,10 @@ h4 {
 .buttons a:nth-of-type(8) {
  left: 357px
 }
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-u6bb{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:center;vertical-align:top}
+.tg .tg-0o9u{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:left}
+.tg .tg-5j0w{border-color:#b1bbb9;text-align:left;vertical-align:top}
+

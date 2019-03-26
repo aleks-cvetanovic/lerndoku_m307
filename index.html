@@ -865,7 +865,13 @@
                     window.alert(quadrat(5)); <br />
                 </div>
             </div>
+            <br />
+            <br /> <a href="https://www.w3schools.com/js/default.asp" target="_blank"><button
+                    class="downloadbtn">Weitere Infos zu
+                    JavaScript</button></a>
+
         </div>
+
 
 
         <h1>jQuery einbinden</h1>
@@ -903,101 +909,181 @@
                 </div>
 
             </div>
+        </div>
 
 
-            <div class="bezug-css">
-                <h4>Ähnlichkeiten mit CSS</h4>
-                <p> jQuery hat grosse Ähnlichkeiten mit CSS, dabei wirkt die Ansprechung der Klassen und IDs fast
-                    identisch.</p>
-                <p>Beispiel</p>
-                <div class="beispiel-ganz">
-                    <button class="kopieren">Kopieren</button>
-                    <div class="code-gleich">
-                        <p>$(".beispiel-class")<br />
-                            $("#beispiel-id")
-                        </p>
-                        <p>#beispiel-id {...}<br />
-                            .beispiel-class {...}
-                        </p>
-                    </div>
-
+        <div class="bezug-css">
+            <h4>Ähnlichkeiten mit CSS</h4>
+            <p> jQuery hat grosse Ähnlichkeiten mit CSS, dabei wirkt die Ansprechung der Klassen und IDs fast
+                identisch.</p>
+            <p>Beispiel</p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    <p>$(".beispiel-class")<br />
+                        $("#beispiel-id")
+                    </p>
+                    <p>#beispiel-id {...}<br />
+                        .beispiel-class {...}
+                    </p>
                 </div>
 
-                <div class="bezug-js">
-                    <h4>Vorteile gegenüber Javascript</h4>
-                    <ul class="vorteile-jquery">
-                        <li>es muss weniger Code geschrieben werden</li>
-                        <li>Programmierer sparen Zeit bei der Erstellung von JavaScript-Anwendungen</li>
-                        <li>das Framework ist einfach zu erlernen</li>
-                        <li>jQuery ist standardkonform
-                        </li>
-                        <li>JavaScript-Anwendungen können stark erweitert werden</li>
-                        <li>ein Seitendokument kann schon angezeigt werden,
-                            bevor alle Elemente vollständig geladen wurden</li>
+            </div>
+        </div>
 
-                    </ul>
+        <div class="bezug-js">
+            <h4>Vorteile gegenüber Javascript</h4>
+            <ul class="vorteile-jquery">
+                <li>es muss weniger Code geschrieben werden</li>
+                <li>Programmierer sparen Zeit bei der Erstellung von JavaScript-Anwendungen</li>
+                <li>das Framework ist einfach zu erlernen</li>
+                <li>jQuery ist standardkonform
+                </li>
+                <li>JavaScript-Anwendungen können stark erweitert werden</li>
+                <li>ein Seitendokument kann schon angezeigt werden,
+                    bevor alle Elemente vollständig geladen wurden</li>
 
-                    <div class="beispiel-ganz">
-                        <p>Beispiel</p>
-                        <button class="kopieren">Kopieren</button>
-                        <div class="code-gleich">
-                            <p>var container = document.getElementById('container');</p><br />
-                            var container = $("#container");
-                        </div>
+            </ul>
+
+            <div class="beispiel-ganz">
+                <p>Beispiel</p>
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    <p>var container = document.getElementById('container');</p><br />
+                    var container = $("#container");
+                </div>
 
 
-                    </div>
+            </div>
+        </div>
 
-                    <div class="document-ready">
-                        <h4>document ready</h4>
-                        <p>Die ready () -Methode wird verwendet,
-                            um eine Funktion verfügbar zu machen,
-                            nachdem das Dokument geladen wurde.
-                            Welcher Code auch immer in die $ (document)
-                            .ready () -Methode geschrieben wird, wird ausgeführt,
-                            sobald der Seiten-DOM zur Ausführung von JavaScript-Code bereit ist.</p>
-                        <div class="beispiel-ganz">
-                            <button class="kopieren">Kopieren</button>
-                            <div class="code-gleich">
-                                $(document).ready(function() {<br />
-                                $("div").click(function() {<br />
-                                alert("Hello, world!");<br />
-                                });<br />
-                                });
-                            </div>
+        <div class="document-ready">
+            <h4>document ready</h4>
+            <p>Die ready () -Methode wird verwendet,
+                um eine Funktion verfügbar zu machen,
+                nachdem das Dokument geladen wurde.
+                Welcher Code auch immer in die $ (document)
+                .ready () -Methode geschrieben wird, wird ausgeführt,
+                sobald der Seiten-DOM zur Ausführung von JavaScript-Code bereit ist.</p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    $(document).ready(function() {<br />
+                    $("div").click(function() {<br />
+                    alert("Hello, world!");<br />
+                    });<br />
+                    });
+                </div>
 
-                        </div>
+            </div>
+        </div>
 
-                        <div class="events">
-                            <p>Die "Events" werden dafür verwendet, Webseiten interaktiv
-                                darzustellen und dem User interaktives Agieren ermöglichen zu können.
-                                Diese Methode fängt mit "on" an. Darauffolgend kommt kommt die Funktion mit den
-                                entsprechenden Anweisungen, welche
-                                vom Computer auszuführen sind. Die gängigsten sind: "blur";"hover","focus" und "click".
-                            </p>
-                            <p>Beispiel</p>
-                            <div class="beispiel-ganz">
-                                <button class="kopieren">Kopieren</button>
-                                <div class="code-gleich">
-                                    $(document).ready(function(){<br />
 
-                                    $("#testbutton").on("click", function(){<br />
+        <div class="events">
+            <p>Die "Events" werden dafür verwendet, Webseiten interaktiv
+                darzustellen und dem User interaktives Agieren ermöglichen zu können.
+                Diese Methode fängt mit "on" an. Darauffolgend kommt kommt die Funktion mit den
+                entsprechenden Anweisungen, welche
+                vom Computer auszuführen sind. Die gängigsten sind: "blur";"hover","focus" und "click".
+            </p>
+            <p>Beispiel</p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    $(document).ready(function(){<br />
 
-                                    $("#buttontext").css("color", "green");<br />
+                    $("#testbutton").on("click", function(){<br />
 
-                                    });<br />
+                    $("#buttontext").css("color", "green");<br />
 
-                                    });
+                    });<br />
 
-                                </div>
-                                <p>Veranschaulichung</p>
-                                <button class="bspbtn">HALLO, ICH LIEBE jQuery! </button>
-                                <button class="downloadbtn">Klicke hier, so wird der Hintergrund rot</button>
+                    });
 
-                            </div>
-                            <div></div>
-                            <br />
-                            <br />
+                </div>
+            </div>
+            <br />
+            <br />
+            <a href="http://jquery.com/" target="_blank"><button class="downloadbtn">Weitere Infos
+                    zu
+                    jQuery</button></a>
+
+        </div>
+
+        <h1>PHP</h1>
+        <hr class="hr-1" />
+
+        <div class="php-abschnitt">
+            <h4>PHP Allgemeine Erklärung</h4>
+            <p>PHP ist eine serverseitige Scriptsprache, das heisst, damit überhaupt PHP funktioneren kann, muss
+                ein Webbrowser, z.B. XAMPP laufen.Im folgenden Beispiel wird gezeigt, wie ein PHP-File Dank den zwei
+                Diensten "Apache" und "MySQL" im Browser
+                aufgerufen werden kann.
+            </p>
+            <img src="bilder/xampp.PNG" alt="XAMPP-Dienste" class="js-einbinden" />
+        </div>
+
+        <div class="PHP Syntax">
+            <h4>PHP Syntax</h4>
+            <p>Das Skript beginnt mit
+                <? Php und endet mit ?> . Diese Tags werden auch als "Canonical PHP-Tags" bezeichnet. Jeder PHP-Befehl
+                endet mit einem Semikolon ( ; ). </p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    &#x3C;?php<br />
+                    // PHP code kommt hier rein<br />
+                    ?&#x3E;
+                </div>
+
+            </div>
+        </div>
+
+        <h1>Glossar</h1>
+        <hr class="hr-1" />
+        <table class="tg">
+            <tr>
+                <th class="tg-u6bb">
+                    Element&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </th>
+                <th class="tg-0o9u">Beschreibung</th>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">Ajax</td>
+                <td class="tg-5j0w">Konzept der asynchronen Datenübertragung zwischen einem Browser und dem Server.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">CDN</td>
+                <td class="tg-5j0w">Content Delivery Network</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">CSS</td>
+                <td class="tg-5j0w">Cascading Style Sheet</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">D.O.M.</td>
+                <td class="tg-5j0w">Document Object Model</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">HTML</td>
+                <td class="tg-5j0w">Hypertext Markup Language</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">JS</td>
+                <td class="tg-5j0w">JavaScript</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">PHP</td>
+                <td class="tg-5j0w">PHP: Hypertext Preprocessor, dass PHP darin steht für Personal Home Page</td>
+            </tr>
+            <tr>
+                <td class="tg-5j0w">Syntax</td>
+                <td class="tg-5j0w">Korrekte Schreibweise von Code</td>
+            </tr>
+        </table>
+
+
     </main>
 
 
