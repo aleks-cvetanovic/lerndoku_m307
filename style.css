@@ -255,8 +255,9 @@ footer {
     box-shadow: 0px 0px 80px rgb(101, 153, 168);
     bottom:0px;
     margin:0;
-    padding: 0 0 0 20px;  
     width:100%;
+    padding-bottom:50px;
+    padding-top:50px;
 
 
 }
@@ -265,7 +266,7 @@ footer {
     bottom:0px;
     text-align: center;
     padding:0;
-    font-size: 13px;
+    font-size: 17px;
     margin-top:20px;
 
 }
@@ -524,4 +525,13 @@ h4 {
 .tg .tg-u6bb{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:center;vertical-align:top}
 .tg .tg-0o9u{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;background-color:#b1bbb9;border-color:#b1bbb9;text-align:left}
 .tg .tg-5j0w{border-color:#b1bbb9;text-align:left;vertical-align:top}
+
+
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-2fdn{border-color:#9b9b9b;text-align:left;vertical-align:top}
+.tg .tg-zwfd{background-color:#59a2a5;border-color:#59a2a5;text-align:left;vertical-align:top}
 

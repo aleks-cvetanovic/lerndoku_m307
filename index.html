@@ -273,8 +273,30 @@
         <h1>GET vs POST</h1>
         <hr class="hr-1" />
         <div class="get-post">
-            <p></p>
+            <h4>GET</h4>
+            <p>Bei FET werden die Werte aus dem Formular an das Ende des URLs angehängt, der im Attribut "action"
+                stationiert ist. Diese Methode eignet sich
+                für kurze Formulare sowie für das Abrufen von Daten vom Webserver (ohne Daten zu senden, die zu einer
+                Datenbank hinzugefügt oder entfernt werden sollen).
 
+            </p>
+
+        </div>
+        <div class="post-get">
+            <h4>POST</h4>
+            <p>Bei POST werden die Werte in den HTTP-Headern gesendet. Somit sollte man im Allgemeinen POST bei Formularen verwenden.
+                Aus diesen Gründen sollte man POST bei Formularen anwenden:
+
+            </p>
+            <ul>
+                <li>Formulare, in denen Benutzer Dateien hochladen können</li>
+                <li>Lange Formulare
+                    </li>
+                <li>Formulare mit sensiblen Daten
+                        (z.B. Passwörtern)</li>
+                <li>Formulare, die Informationen zu einer Datenbank hinzufügen oder daraus entfernen</li>
+            </ul>
+            <p>Gibt man die Methode nicht an, so werden die Formulardaten standardmässig mit GET gesendet.</p>
         </div>
         <h1>Javascript einbinden</h1>
         <hr class="hr-1">
@@ -876,6 +898,26 @@
 
         <h1>jQuery einbinden</h1>
         <hr class="hr-1" />
+        <div class="erklaerung-jquery">
+            <h4>jQuery allgemein erklärt</h4>
+            jQuery ist eine frei verfügbare JavaScript-Bibliothek die Funktionen zu DOM-Navigation und -Manipulation zur
+            Verfügung stellt.
+            <br />
+            DOM steht für "Document Object Model". Es dient zur Strukturierung der Dokumente. Somit werden alle Files
+            innerhalb des Root-Ordners aufgelistet und dementsprechend
+            übersichtlich dargestellt. Jeder Knoten stellt ein Objekt dar, welches einen Teil des Dokumentes
+            repräsentiert, z.B. einen Absatz,
+            einen Titel, ein Bild oder auch eine Tabelle.
+            <p>Beispiel</p>
+        </div>
+        <img src="bilder/DOM-model.png" alt="DOM-Modell" class="dom-model" />
+        <style>
+            .dom-model {
+                width: 500px;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
 
         <div class="jquery-einbinden">
             <h4>jQuery einbinden (Online-Library)</h4>
@@ -1037,7 +1079,49 @@
                 </div>
 
             </div>
+            <br />
+            <br />
+
         </div>
+        <div class="php-vs-js">
+            <h4>PHP vs JS</h4>
+
+            <table class="tg">
+                <tr>
+                    <th class="tg-zwfd">Thema</th>
+                    <th class="tg-zwfd">jQuery</th>
+                    <th class="tg-zwfd">PHP</th>
+                </tr>
+                <tr>
+                    <td class="tg-2fdn">Variablen</td>
+                    <td class="tg-2fdn">var name = 'wert';</td>
+                    <td class="tg-2fdn">$name = 'wert';</td>
+                </tr>
+                <tr>
+                    <td class="tg-2fdn">Variablen ausgegeben</td>
+                    <td class="tg-2fdn">document.write(name);</td>
+                    <td class="tg-2fdn">echo $name</td>
+                </tr>
+                <tr>
+                    <td class="tg-2fdn">Arrays</td>
+                    <td class="tg-2fdn">var name = ['wert', 'wert'];</td>
+                    <td class="tg-2fdn">$name = array('wert', 'wert');</td>
+                </tr>
+                <tr>
+                    <td class="tg-2fdn">Else if Abfragen</td>
+                    <td class="tg-2fdn">else if (Bedingung)</td>
+                    <td class="tg-2fdn">elseif (Bedingung)</td>
+                </tr>
+            </table>
+            <br />
+            <br />
+
+            <a href="https://www.w3schools.com/php/" target="_blank"><button class="downloadbtn">Weitere Infos
+                    zu
+                    PHP</button></a>
+
+        </div>
+
 
         <h1>Glossar</h1>
         <hr class="hr-1" />
@@ -1095,21 +1179,17 @@
 
 
     <footer id="footer-titel">
-        <a href="www.instagram.com"><img src="bilder/instagram-logo.svg" id="instagram-logo" /></a>
 
 
-        <div class="links">
-            <h3 id="links-titel"><u>Nützliche externe Webseiten</u></h3>
-            <a href="extern_nützliche_webseiten.zip"><button class="downloadbtn">Download</button></a>
-        </div>
 
 
 
 
 
         <div class="copyright">
-            Copyright © by Aleks Cvetanovic
+            Website created by Cvetanovic Aleks
         </div>
+
 
     </footer>
 
