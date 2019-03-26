@@ -26,6 +26,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lerndoku.js"></script>
+
 </head>
 
 <body>
@@ -338,15 +341,20 @@
             <p>Beispiel:</p>
         </div>
         <div class="beispiel-ganz">
-            <button class="eins">Kopieren</button>
+            <button class="kopieren">Kopieren</button>
             <style>
-                .eins {
+                .kopieren {
                     background-color: rgb(125, 171, 185);
                     border-style: none;
                     padding: 5px 10px 5px 10px;
                     border-radius: 10px 10px 0 0;
                     float: right;
-                    margin-right:60px;
+                    margin-right: 60px;
+                }
+
+                .kopieren:hover {
+                    background-color: rgb(90, 127, 138);
+                    cursor: pointer;
                 }
             </style>
 
@@ -365,9 +373,13 @@
             </p>
             <p>Beispiel</p>
         </div>
-        <div class="code-gleich">
-            var Beispiel;<br />
-            Beispiel = 3;
+        <div class="beispiel-ganz">
+            <button class="kopieren">Kopieren</button>
+
+            <div class="code-gleich">
+                var Beispiel;<br />
+                Beispiel = 3;
+            </div>
         </div>
 
         <div class="var-datentypen">
@@ -379,23 +391,26 @@
             </p>
         </div>
 
+        <div class="beispiel-ganz">
+            <button class="kopieren">Kopieren</button>
 
-        <div class="code-gleich">
-            <p>
-                //NUMMERISCHE DATEN <br />
-                //---------------------<br />
-                0.75
-            </p>
-            <p>
-                //STRINGDATEN <br />
-                //---------------------<br />
-                &#x22;Hi, Ivy!&#x22;
-            </p>
-            <p>
-                //BOOLESCHE DATEN<br />
-                //---------------------<br />
-                true
-            </p>
+            <div class="code-gleich">
+                <p>
+                    //NUMMERISCHE DATEN <br />
+                    //---------------------<br />
+                    0.75
+                </p>
+                <p>
+                    //STRINGDATEN <br />
+                    //---------------------<br />
+                    &#x22;Hi, Ivy!&#x22;
+                </p>
+                <p>
+                    //BOOLESCHE DATEN<br />
+                    //---------------------<br />
+                    true
+                </p>
+            </div>
         </div>
 
         <div class="variablen-ändern">
@@ -409,9 +424,13 @@
                 die Stelle, an welcher sich der Wert befindet, angegeben werden.
             </p>
         </div>
-        <div class="code-gleich">
-            var Beispiel_2 = ["Banane","Apfel","Gurke"]; <br />
-            Beispiel_2 (2) = "Mandarine";
+        <div class="beispiel-ganz">
+            <button class="kopieren">Kopieren</button>
+
+            <div class="code-gleich">
+                var Beispiel_2 = ["Banane","Apfel","Gurke"]; <br />
+                Beispiel_2 (2) = "Mandarine";
+            </div>
         </div>
 
         <h1>Array</h1>
@@ -427,10 +446,13 @@
                 verwenden.</p>
             <p>Beispiel</p>
         </div>
+        <div class="beispiel-ganz">
+            <button class="kopieren">Kopieren</button>
 
-        <div class="code-gleich">
-            var colors; <br />
-            colors = ["weiss","schwarz","benutzer"];
+            <div class="code-gleich">
+                var colors; <br />
+                colors = ["weiss","schwarz","benutzer"];
+            </div>
         </div>
 
         <div class="operatoren">
@@ -441,9 +463,13 @@
                 mehr Werte verwenden, um einen einzelnen Wert zurückzugeben".
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                var color = "beige"; <br />
-                var area = 3 * 2;
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    var color = "beige"; <br />
+                    var area = 3 * 2;
+                </div>
             </div>
 
             <p>In Ausdrücken werden Operatoren verwendet, um aus einem
@@ -452,32 +478,52 @@
             </p>
             <p><u>Zuweisungsoperator</u></p>
             <p>Weist einer Variable einen Wert zu.</p>
-            <div class="code-gleich">
-                color = "beige";
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    color = "beige";
+                </div>
             </div>
             <br />
             <p><u>Arithmetische Operatoren</u></p>
             <p>Führen die Grundrechenarten durch.</p>
-            <div class="code-gleich">
-                area = 3 * 2;
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    area = 3 * 2;
+                </div>
             </div>
             <br />
             <p><u>Stringoperatoren</u></p>
             <p>Verkettet zwei Strings.</p>
-            <div class="code-gleich">
-                greeting = "Hi" + "Molly";
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    greeting = "Hi" + "Molly";
+                </div>
             </div>
             <br />
             <p><u>Vergleichsoperatoren</u></p>
             <p>Vergleichen zwei Werte und geben "true" oder "false" zurück.</p>
-            <div class="code-gleich">
-                buy = 3 > 5;
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    buy = 3 > 5;
+                </div>
             </div>
             <br />
             <p><u>Logische Operatoren</u></p>
             <p>Kombinieren Ausdrücke und geben "true" oder "false" zurück.</p>
-            <div class="code-gleich">
-                buy = (5 &#x3E; 3) &#x26;&#x26; (2 &#x3C; 4);
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    buy = (5 &#x3E; 3) &#x26;&#x26; (2 &#x3C; 4);
+                </div>
             </div>
         </div>
 
@@ -491,10 +537,14 @@
                 man "Funktionsdeklaration".
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                function sayhello() {<br />
-                document.write("Hallo!");<br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    function sayhello() {<br />
+                    document.write("Hallo!");<br />
+                    }
+                </div>
             </div>
         </div>
 
@@ -505,10 +555,14 @@
                 der Funktion werden diese Parameter wie Variablen verwendet.
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                function getArea(width, height) {<br />
-                return width * height; <br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    function getArea(width, height) {<br />
+                    return width * height; <br />
+                    }
+                </div>
             </div>
         </div>
 
@@ -523,17 +577,21 @@
                 Bezeichnungen für Variablen und Funktionen.
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                var hotel = { <br />
-                name: "Quay",<br />
-                rooms: 40,<br />
-                booked: 25,<br />
-                gym: true, <br />
-                roomTypes: ["Twin","Doppel","Suite"],<br />
-                <br />
-                checkAvailability: function() {<br />
-                return this.rooms - this.booked;<br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    var hotel = { <br />
+                    name: "Quay",<br />
+                    rooms: 40,<br />
+                    booked: 25,<br />
+                    gym: true, <br />
+                    roomTypes: ["Twin","Doppel","Suite"],<br />
+                    <br />
+                    checkAvailability: function() {<br />
+                    return this.rooms - this.booked;<br />
+                    }
+                </div>
             </div>
         </div>
 
@@ -549,18 +607,22 @@
                 (Hinter ddem letzten Wert steht kein Komma mehr.)
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                var hotel = {<br />
-                <br />
-                name: "Quay",<br />
-                rooms: 40,<br />
-                booked: 25,<br />
-                <br />
-                checkAvailability:function() {<br />
-                return this.rooms - this.booked;<br />
-                } <br />
-                <br />
-                };
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    var hotel = {<br />
+                    <br />
+                    name: "Quay",<br />
+                    rooms: 40,<br />
+                    booked: 25,<br />
+                    <br />
+                    checkAvailability:function() {<br />
+                    return this.rooms - this.booked;<br />
+                    } <br />
+                    <br />
+                    };
+                </div>
             </div>
         </div>
         <h1>If-Anweisungen</h1>
@@ -572,10 +634,14 @@
 
             </p>
             <p>Beispiel</p>
-            <div class="code-gleich">
-                if (scorde >= 50) {<br />
-                congratulate();<br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    if (scorde >= 50) {<br />
+                    congratulate();<br />
+                    }
+                </div>
             </div>
             <p>Ergibt die Bedingung <style>
                     .true {
@@ -600,12 +666,16 @@
             <h4>If...else-Anweisungen</h4>
             <p>Auch if...else-Anweisungen prüfen eine Bedingung. Beim Ergebnis <span class="true">"true"</span>
                 wird der erste Codeblock ausgeführt, bei <span class="false">"false"</span>der zweite.</p>
-            <div class="code-gleich"> if (score >= 50) {<br />
-                congratulate(); <br />
-                }<br />
-                else {<br />
-                encourage();<br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich"> if (score >= 50) {<br />
+                    congratulate(); <br />
+                    }<br />
+                    else {<br />
+                    encourage();<br />
+                    }
+                </div>
             </div>
         </div>
 
@@ -619,26 +689,30 @@
                 sowie den Code an, der ausgeführt werden muss, wenn sie
                 diesen Wert hat.
             </p>
-            <div class="code-gleich">
-                switch (level) {<br />
-                <br />
-                case "One":<br />
-                title = "Level 1";<br />
-                break;<br />
-                <br />
-                case "Two":<br />
-                title = "Level 2";<br />
-                break;<br />
-                <br />
-                case "Three":<br />
-                title = "Level 3";<br />
-                break;<br />
-                <br />
-                default:<br />
-                title = "Test";<br />
-                break;<br />
-                <br />
-                }
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    switch (level) {<br />
+                    <br />
+                    case "One":<br />
+                    title = "Level 1";<br />
+                    break;<br />
+                    <br />
+                    case "Two":<br />
+                    title = "Level 2";<br />
+                    break;<br />
+                    <br />
+                    case "Three":<br />
+                    title = "Level 3";<br />
+                    break;<br />
+                    <br />
+                    default:<br />
+                    title = "Test";<br />
+                    break;<br />
+                    <br />
+                    }
+                </div>
             </div>
         </div>
 
@@ -658,8 +732,12 @@
                 <p>Die Variable, die als Zähler dient, wird erstellt und auf 0 gesetzt. Gewöhnlich
                     heisst sie "i".
                 </p>
-                <div class="code-gleich">
-                    var i = 0;
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        var i = 0;
+                    </div>
                 </div>
             </div>
 
@@ -667,8 +745,12 @@
                 <h4>Bedingung</h4>
                 <p>Die Schleife wird ausgeführt, bis der Zähler einen
                     vorgegebenen Wert erreicht.</p>
-                <div class="code-gleich">
-                    i &#x3C; 10;
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        i &#x3C; 10;
+                    </div>
                 </div>
             </div>
 
@@ -677,8 +759,12 @@
                 <p>Jedes Mal, wenn die Anweisungen in den geschweiften Klammern
                     ausgeführt werden, wird der Zähler um 1 erhöht.
                 </p>
-                <div class="code-gleich">
-                    i++
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        i++
+                    </div>
                 </div>
             </div>
 
@@ -689,10 +775,14 @@
                     ist ein Zähler, der angibt, wie oft die Schleife durchlaufen werden soll.
                 </p>
                 <p>Beispiel</p>
-                <div class="code-gleich">
-                    for (var i = 0; i &#x3C; 10; i++) {<br />
-                    document.write(i);<br />
-                    }
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        for (var i = 0; i &#x3C; 10; i++) {<br />
+                        document.write(i);<br />
+                        }
+                    </div>
                 </div>
             </div>
 
@@ -703,14 +793,18 @@
                     so lange,
                     wie die Bedingung "true" ist.
                 </p>
-                <div class="code-gleich">
-                    var i = 1;<br />
-                    var msg = "";<br />
-                    <br />
-                    while (i &#x3C; 10) {<br />
-                    msg += i + "x 5 = " + (i * 5) + "&#x3C;br /&#x3E;";<br />
-                    i++;<br />
-                    }
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        var i = 1;<br />
+                        var msg = "";<br />
+                        <br />
+                        while (i &#x3C; 10) {<br />
+                        msg += i + "x 5 = " + (i * 5) + "&#x3C;br /&#x3E;";<br />
+                        i++;<br />
+                        }
+                    </div>
                 </div>
             </div>
 
@@ -721,24 +815,211 @@
                     Anweisungen in den geschweiften Klammern werden mindestens einmal ausgeführt, auch wenn
                     die Bedingung gleich am Anfang als "false" angezeigt wird.
                 </p>
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+
+                    <div class="code-gleich">
+                        var i = 1;<br />
+                        var msg = "";<br />
+                        <br />
+                        do {<br />
+                        msg += i + " x 5 = " + (i * 5) + "<br />";s<br />
+                        i++;<br />
+                        } while (i &#x3C; 1);
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="funktionen">
+            <h4>Funktionen</h4>
+            <p>In JavaScript ist es wie auch in vielen anderen Programmiersprachen Funktionen zu definieren,
+                welche man später im Skript aufrufen kann. Der Syntax einer solchen Funktion ist folgendermassen
+                aufgebaut:
+            </p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
                 <div class="code-gleich">
-                    var i = 1;<br />
-                    var msg = "";<br />
-                    <br />
-                    do {<br />
-                    msg += i + " x 5 = " + (i * 5) + "<br />";s<br />
-                    i++;<br />
-                    } while (i &#x3C; 1);
+                    function fname(Parameterliste){<br />
+                    Anweisungen<br />
+                    };
+                </div>
+            </div>
+
+            <p>Der Funktionsname darf nicht mit einer Ziffer beginnen oder
+                Buchstaben wie ä,ö oder ü enthalten.
+                In den Klammern stehen die Parameter,
+                welche mittels Komma getrennt werden,
+                auf die in den Klammern definierten Parameter kann
+                innerhalb der Funktion zugegriffen werden.
+                Eine Funktion kann nicht nur Werte entgegen
+                nehmen sondern auch Werte zurückgeben,
+                ein solcher Wert wird Return Value genannt und wird mittels
+                "return" in der Anweisung der Funktion deklariert.</p>
+            <p>Beispiel</p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+
+                <div class="code-gleich">
+                    function quadrat(x) {<br />
+                    return x * x;<br />
+                    } <br />
+                    window.alert(quadrat(5)); <br />
                 </div>
             </div>
         </div>
 
 
+        <h1>jQuery einbinden</h1>
+        <hr class="hr-1" />
+
+        <div class="jquery-einbinden">
+            <h4>jQuery einbinden (Online-Library)</h4>
+
+            <p>Da jQuery auf eine Online-Library basiert, muss diese zunächst einmal eingebunden werden, sodass
+                jQuery-Codes auch gebraucht werden können. Das Einbinden funktioniert folgendermassen:
+            </p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    &#x3C;script
+                    src=&#x22;https://code.jquery.com/jquery-3.3.1.min.js&#x22;
+                    integrity=&#x22;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&#x22;
+                    crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+                </div>
+
+            </div>
+        </div>
+
+        <div class="jQuery-Syntax">
+            <h4>jQuery-Syntax</h4>
+            <p>Der jQuery-Syntax ist prinzipiell nach dem Javascript-Syntax aufgebaut. Der jQuery-Syntax hat aber
+                deutlich mehr Vorteile.
+                Er ist kürzer,flexibler und ermöglich effizienteres und übersichtliches Arbeiten.
+            </p>
+            <p>Syntax</p>
+            <div class="beispiel-ganz">
+                <button class="kopieren">Kopieren</button>
+                <div class="code-gleich">
+                    $(selector).action()
+                </div>
+
+            </div>
 
 
+            <div class="bezug-css">
+                <h4>Ähnlichkeiten mit CSS</h4>
+                <p> jQuery hat grosse Ähnlichkeiten mit CSS, dabei wirkt die Ansprechung der Klassen und IDs fast
+                    identisch.</p>
+                <p>Beispiel</p>
+                <div class="beispiel-ganz">
+                    <button class="kopieren">Kopieren</button>
+                    <div class="code-gleich">
+                        <p>$(".beispiel-class")<br />
+                            $("#beispiel-id")
+                        </p>
+                        <p>#beispiel-id {...}<br />
+                            .beispiel-class {...}
+                        </p>
+                    </div>
 
+                </div>
+
+                <div class="bezug-js">
+                    <h4>Vorteile gegenüber Javascript</h4>
+                    <ul class="vorteile-jquery">
+                        <li>es muss weniger Code geschrieben werden</li>
+                        <li>Programmierer sparen Zeit bei der Erstellung von JavaScript-Anwendungen</li>
+                        <li>das Framework ist einfach zu erlernen</li>
+                        <li>jQuery ist standardkonform
+                        </li>
+                        <li>JavaScript-Anwendungen können stark erweitert werden</li>
+                        <li>ein Seitendokument kann schon angezeigt werden,
+                            bevor alle Elemente vollständig geladen wurden</li>
+
+                    </ul>
+
+                    <div class="beispiel-ganz">
+                        <p>Beispiel</p>
+                        <button class="kopieren">Kopieren</button>
+                        <div class="code-gleich">
+                            <p>var container = document.getElementById('container');</p><br />
+                            var container = $("#container");
+                        </div>
+
+
+                    </div>
+
+                    <div class="document-ready">
+                        <h4>document ready</h4>
+                        <p>Die ready () -Methode wird verwendet,
+                            um eine Funktion verfügbar zu machen,
+                            nachdem das Dokument geladen wurde.
+                            Welcher Code auch immer in die $ (document)
+                            .ready () -Methode geschrieben wird, wird ausgeführt,
+                            sobald der Seiten-DOM zur Ausführung von JavaScript-Code bereit ist.</p>
+                        <div class="beispiel-ganz">
+                            <button class="kopieren">Kopieren</button>
+                            <div class="code-gleich">
+                                $(document).ready(function() {<br />
+                                $("div").click(function() {<br />
+                                alert("Hello, world!");<br />
+                                });<br />
+                                });
+                            </div>
+
+                        </div>
+
+                        <div class="events">
+                            <p>Die "Events" werden dafür verwendet, Webseiten interaktiv
+                                darzustellen und dem User interaktives Agieren ermöglichen zu können.
+                                Diese Methode fängt mit "on" an. Darauffolgend kommt kommt die Funktion mit den
+                                entsprechenden Anweisungen, welche
+                                vom Computer auszuführen sind. Die gängigsten sind: "blur";"hover","focus" und "click".
+                            </p>
+                            <p>Beispiel</p>
+                            <div class="beispiel-ganz">
+                                <button class="kopieren">Kopieren</button>
+                                <div class="code-gleich">
+                                    $(document).ready(function(){<br />
+
+                                    $("#testbutton").on("click", function(){<br />
+
+                                    $("#buttontext").css("color", "green");<br />
+
+                                    });<br />
+
+                                    });
+
+                                </div>
+                                <p>Veranschaulichung</p>
+                                <button class="bspbtn">HALLO, ICH LIEBE jQuery! </button>
+                                <button class="downloadbtn">Klicke hier, so wird der Hintergrund rot</button>
+
+                            </div>
+                            <div></div>
+                            <br />
+                            <br />
+                            <iframe height="265" style="width: 100%;" scrolling="no" title="Iframe interact.js"
+                                src="//codepen.io/tommywang/embed/rVLBbq/?height=265&theme-id=dark&default-tab=js,result"
+                                frameborder="no" allowtransparency="true" allowfullscreen="true">
+                                See the Pen <a href='https://codepen.io/tommywang/pen/rVLBbq/'>Iframe interact.js</a> by
+                                Shiyue Wang
+                                (<a href='https://codepen.io/tommywang'>@tommywang</a>) on <a
+                                    href='https://codepen.io'>CodePen</a>.
+                            </iframe>
 
     </main>
+
+
+
+
+
+
+
+
+
     <footer id="footer-titel">
         <a href="www.instagram.com"><img src="bilder/instagram-logo.svg" id="instagram-logo" /></a>
 
@@ -758,14 +1039,7 @@
 
     </footer>
 
-    <script>
-        $(".js-einbinden").focus(function css() {
-            CSSStyleSheet(screenTop);
-        })
-    </script>
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="lerndoku.js"></script>
 </body>
 
 </html>

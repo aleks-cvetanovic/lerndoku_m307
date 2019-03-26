@@ -31,3 +31,15 @@ console.log();
 var Beispiel_2 = ["Banane","Apfel","Gurke"]; <br/>
 Beispiel_2 (2) = "Mandarine";
 console.log(Beispiel_2);
+
+
+
+$(document).ready(function(){
+
+    $(".downloadbtn").on("click", function(){
+    
+    $(".bspbtn").css("background-color", "red");
+    
+    });
+    
+    });
