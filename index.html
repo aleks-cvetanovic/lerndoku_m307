@@ -337,11 +337,24 @@
             </p>
             <p>Beispiel:</p>
         </div>
-        <div class="code-gleich">
-            var Beispiel;
+        <div class="beispiel-ganz">
+            <button class="eins">Kopieren</button>
+            <style>
+                .eins {
+                    background-color: rgb(125, 171, 185);
+                    border-style: none;
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 10px 10px 0 0;
+                    float: right;
+                    margin-right:60px;
+                }
+            </style>
 
+            <div class="code-gleich">
+                var Beispiel;
+
+            </div>
         </div>
-
         <br />
 
         <div class="variable-erstellen-2">
@@ -598,36 +611,129 @@
 
 
         <h1>Switch-Anweisungen</h1>
-        <hr class="hr-1"/>
+        <hr class="hr-1" />
         <div class="switch-anweisungen">
             <h4>Switch erstellen</h4>
-            <p>Eine switch-Anweisung prüft eine Variable, die als Switch-Wert bezeichnet 
-                wird. Jeder der Fälle gibt einen möglichen Wert für die Variable 
-                sowie den Code an, der ausgeführt werden muss, wenn sie 
+            <p>Eine switch-Anweisung prüft eine Variable, die als Switch-Wert bezeichnet
+                wird. Jeder der Fälle gibt einen möglichen Wert für die Variable
+                sowie den Code an, der ausgeführt werden muss, wenn sie
                 diesen Wert hat.
             </p>
             <div class="code-gleich">
-                switch (level) {<br/>
-                    <br/>
-                    case "One":<br/>
-                    title = "Level 1";<br/>
-                    break;<br/>
-                    <br/>
-                    case "Two":<br/>
-                    title = "Level 2";<br/>
-                    break;<br/>
-                    <br/>
-                    case "Three":<br/>
-                    title = "Level 3";<br/>
-                    break;<br/>
-                    <br/>
-                   default:<br/>
-                    title = "Test";<br/>
-                    break;<br/>
-                    <br/>
+                switch (level) {<br />
+                <br />
+                case "One":<br />
+                title = "Level 1";<br />
+                break;<br />
+                <br />
+                case "Two":<br />
+                title = "Level 2";<br />
+                break;<br />
+                <br />
+                case "Three":<br />
+                title = "Level 3";<br />
+                break;<br />
+                <br />
+                default:<br />
+                title = "Test";<br />
+                break;<br />
+                <br />
                 }
             </div>
         </div>
+
+        <h1>Loops</h1>
+        <hr class="hr-1" />
+        <div class="loops">
+            <h4>Schleifen Allgemein erklärt</h4>
+            <p>In Schleifen wid eine Bedingung geprüft. Wenn sie "true"
+                ergibt, wird ein Codeblock ausgeführt. Anschliessend wird ide Bedingung erneut geprüft,
+                und wenn sie immer noch true ist, wird der Codeblock erneut ausgeführt. Das wird
+                so lange widerholt, bis die Prüfung "false" zurückgibt. Es gibt drei
+                Arten von Schleifen: "For","While" und "Do...While"
+            </p>
+
+            <div class="initialisierung">
+                <h4>Initialisierung</h4>
+                <p>Die Variable, die als Zähler dient, wird erstellt und auf 0 gesetzt. Gewöhnlich
+                    heisst sie "i".
+                </p>
+                <div class="code-gleich">
+                    var i = 0;
+                </div>
+            </div>
+
+            <div class="bedingung">
+                <h4>Bedingung</h4>
+                <p>Die Schleife wird ausgeführt, bis der Zähler einen
+                    vorgegebenen Wert erreicht.</p>
+                <div class="code-gleich">
+                    i &#x3C; 10;
+                </div>
+            </div>
+
+            <div class="aktualisierung">
+                <h4>Aktualisierung</h4>
+                <p>Jedes Mal, wenn die Anweisungen in den geschweiften Klammern
+                    ausgeführt werden, wird der Zähler um 1 erhöht.
+                </p>
+                <div class="code-gleich">
+                    i++
+                </div>
+            </div>
+
+            <div class="for">
+                <h4>For-Schleife</h4>
+                <p>Die For-Schleife braucht man um einen Code in einer bestimmten Anzahl von Durchläufen auszuühren.
+                    Dies ist auch die gebräuchlichste Art von der Schleife. Die Bedingung in einer For-Schleife
+                    ist ein Zähler, der angibt, wie oft die Schleife durchlaufen werden soll.
+                </p>
+                <p>Beispiel</p>
+                <div class="code-gleich">
+                    for (var i = 0; i &#x3C; 10; i++) {<br />
+                    document.write(i);<br />
+                    }
+                </div>
+            </div>
+
+            <div class="while">
+                <h4>While-Schleife</h4>
+                <p>die While-Schleife wird genutzt, wenn man nicht weiss, wie oft der Code
+                    ausgeführt werden soll. Die Bedingung muss hier kein Zähler sein. Der Code durchläuft die Schleife
+                    so lange,
+                    wie die Bedingung "true" ist.
+                </p>
+                <div class="code-gleich">
+                    var i = 1;<br />
+                    var msg = "";<br />
+                    <br />
+                    while (i &#x3C; 10) {<br />
+                    msg += i + "x 5 = " + (i * 5) + "&#x3C;br /&#x3E;";<br />
+                    i++;<br />
+                    }
+                </div>
+            </div>
+
+            <div class="do-while">
+                <h4>Do...While-Schleife</h4>
+                <p>Die do...while-Schleife ähnelt der while-Schleife sehr stark, allerdings gibt es einen wichtigen
+                    Unterschied: Die
+                    Anweisungen in den geschweiften Klammern werden mindestens einmal ausgeführt, auch wenn
+                    die Bedingung gleich am Anfang als "false" angezeigt wird.
+                </p>
+                <div class="code-gleich">
+                    var i = 1;<br />
+                    var msg = "";<br />
+                    <br />
+                    do {<br />
+                    msg += i + " x 5 = " + (i * 5) + "<br />";s<br />
+                    i++;<br />
+                    } while (i &#x3C; 1);
+                </div>
+            </div>
+        </div>
+
+
 
 
 
