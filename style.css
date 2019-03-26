@@ -195,11 +195,12 @@ header {
 
 .code-gleich {
     background-color:rgb(125, 171, 185);
-    padding:20px;
+    padding:20px 130px 20px 130px;
     border-radius: 20px;
     display:flex;
     justify-content: center;
     flex-direction: column;
+    text-align:justify;
 }
 
 #watermark-1 {

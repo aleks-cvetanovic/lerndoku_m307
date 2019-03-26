@@ -276,7 +276,7 @@
             <p></p>
 
         </div>
-        <h1>Javascript</h1>
+        <h1>Javascript einbinden</h1>
         <hr class="hr-1">
         <div class="javascript-eifuehrung">
             <h3>Javascript mit HTML-Dateien verknüpfen</h3>
@@ -301,7 +301,8 @@
         </div>
         <img src="bilder/script-in-html.png" alt="Script innerhalb HTML" class="alle-img" />
 
-
+        <h1>Objekte & Methoden</h1>
+        <hr class="hr-1" />
         <div class="objekte-haupt">
             <div class="objekte-methoden">
                 <h3>Objekte & Methoden verwenden</h3>
@@ -326,7 +327,8 @@
                 </p>
             </div>
         </div>
-
+        <h1>Variablen</h1>
+        <hr class="hr-1" />
         <div class="variable-erstellen">
             <h3>Variable erstellen</h3>
             <p>Eine Variable ist mit der Klassierung in HTML gut zu vergleichen. Bei der Varible folgt als
@@ -335,7 +337,11 @@
             </p>
             <p>Beispiel:</p>
         </div>
-        <img src="bilder/var-beispiel.png" alt="variable-erstellen" class="alle-img" />
+        <div class="code-gleich">
+            var Beispiel;
+
+        </div>
+
         <br />
 
         <div class="variable-erstellen-2">
@@ -346,7 +352,10 @@
             </p>
             <p>Beispiel</p>
         </div>
-        <img src="bilder/var-beispiel-2.png" alt="var Beispiel = 3;" class="alle-img" />
+        <div class="code-gleich">
+            var Beispiel;<br />
+            Beispiel = 3;
+        </div>
 
         <div class="var-datentypen">
             <h4>Datentypen der Variablen</h4>
@@ -360,24 +369,21 @@
 
         <div class="code-gleich">
             <p>
-                //NUMMERISCHE DATEN <br/>
-                //---------------------<br/>
+                //NUMMERISCHE DATEN <br />
+                //---------------------<br />
                 0.75
             </p>
             <p>
-                //STRINGDATEN <br/>
-                //---------------------<br/>
+                //STRINGDATEN <br />
+                //---------------------<br />
                 &#x22;Hi, Ivy!&#x22;
-                </p>
-                <p>
-                //BOOLESCHE DATEN<br/>
-                //---------------------<br/>
+            </p>
+            <p>
+                //BOOLESCHE DATEN<br />
+                //---------------------<br />
                 true
             </p>
         </div>
-        
-        
-        <img src="bilder/datentypen-var.png" alt="Datentypen der Variablen" class="alle-img" />
 
         <div class="variablen-ändern">
             <h4>Werte der Variablen ändern</h4>
@@ -386,15 +392,222 @@
                 komplizierte Lösung gesucht werden, sondern man kann das Attribut nochmals anschreiben und den neuen
                 Wert
                 eingeben.<br />
-                Sollte es mehrere Werte schon gehabt haben und man möchte nur z.B. den dritten Wert ändern, muss dies
-                angegeben werden.
+                Sollte es mehrere Werte schon gehabt haben und man möchte nur z.B. den dritten Wert ändern, so muss
+                die Stelle, an welcher sich der Wert befindet, angegeben werden.
             </p>
+        </div>
+        <div class="code-gleich">
+            var Beispiel_2 = ["Banane","Apfel","Gurke"]; <br />
+            Beispiel_2 (2) = "Mandarine";
+        </div>
+
+        <h1>Array</h1>
+        <hr class="hr-1" />
+        <div class="array">
+            <h4>Arrays erstellen</h4>
+            <p>Der Unterschied zwischen einem Array und einer Variable liegt bei der Anzahl Werte, welche gespeichert
+                werden können. Der Array ist eine besondere Art von Variablen. Damit kann man nicht nur eine Variable
+                speichern, sondern sogar
+                eine ganze Liste von Werten. Vorallem bei Werten, welche einen Zusammenhang haben, sollte man die
+                Methode
+                mit dem "Array"
+                verwenden.</p>
+            <p>Beispiel</p>
+        </div>
+
+        <div class="code-gleich">
+            var colors; <br />
+            colors = ["weiss","schwarz","benutzer"];
+        </div>
+
+        <div class="operatoren">
+            <h4>Operatoren</h4>
+            <p>
+                Grunsätzlich wird zwichen zwei Arten von Ausdrücken unterschieden: "Ausdrücke, die einer Variable einen
+                Wert zuweisen" und "Ausdrücke, die zwei oder
+                mehr Werte verwenden, um einen einzelnen Wert zurückzugeben".
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                var color = "beige"; <br />
+                var area = 3 * 2;
+            </div>
+
+            <p>In Ausdrücken werden Operatoren verwendet, um aus einem
+                oder mehreren Werten einen neuen Wert zu gewinnen. Hier wird zwischen sechs verschiedenen Operatoren
+                unterschieden:
+            </p>
+            <p><u>Zuweisungsoperator</u></p>
+            <p>Weist einer Variable einen Wert zu.</p>
+            <div class="code-gleich">
+                color = "beige";
+            </div>
+            <br />
+            <p><u>Arithmetische Operatoren</u></p>
+            <p>Führen die Grundrechenarten durch.</p>
+            <div class="code-gleich">
+                area = 3 * 2;
+            </div>
+            <br />
+            <p><u>Stringoperatoren</u></p>
+            <p>Verkettet zwei Strings.</p>
+            <div class="code-gleich">
+                greeting = "Hi" + "Molly";
+            </div>
+            <br />
+            <p><u>Vergleichsoperatoren</u></p>
+            <p>Vergleichen zwei Werte und geben "true" oder "false" zurück.</p>
+            <div class="code-gleich">
+                buy = 3 > 5;
+            </div>
+            <br />
+            <p><u>Logische Operatoren</u></p>
+            <p>Kombinieren Ausdrücke und geben "true" oder "false" zurück.</p>
+            <div class="code-gleich">
+                buy = (5 &#x3E; 3) &#x26;&#x26; (2 &#x3C; 4);
+            </div>
+        </div>
+
+        <h1>Funktionen</h1>
+        <hr class="hr-1" />
+        <div class="functions">
+            <h4>Funktion erstellen</h4>
+            <p>Um eine Funktion zu erstellen, müssen Name und Anweisungen definiert werden.
+                Die Anweisungen, die die Funktion ausführen soll, müssen in geschweiften Klammern sein. Diesen Vorgang
+                nennt
+                man "Funktionsdeklaration".
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                function sayhello() {<br />
+                document.write("Hallo!");<br />
+                }
+            </div>
+        </div>
+
+        <div class="functions-zwei">
+            <h4>Funktionen deklarieren, die infos benötigen</h4>
+            <p>Manche Funktionen benötigen Informationen, um ihre Aufgabe zu erfüllen.
+                In einem solchen Fall gibt man der Funktion bei der Deklaration "Parameter" mit. Innerhalb
+                der Funktion werden diese Parameter wie Variablen verwendet.
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                function getArea(width, height) {<br />
+                return width * height; <br />
+                }
+            </div>
+        </div>
+
+        <h1>Objekte</h1>
+        <hr class="hr-1" />
+        <div class="objekte">
+            <h4>Was sind Objekte?</h4>
+
+            <p>Objekte fassen einen Satz von Variablen und Funktionen zu einem Modell
+                zusammen, das für ein Ding der realen Welt steht.
+                In Objekten verwenden wir neue
+                Bezeichnungen für Variablen und Funktionen.
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                var hotel = { <br />
+                name: "Quay",<br />
+                rooms: 40,<br />
+                booked: 25,<br />
+                gym: true, <br />
+                roomTypes: ["Twin","Doppel","Suite"],<br />
+                <br />
+                checkAvailability: function() {<br />
+                return this.rooms - this.booked;<br />
+                }
+            </div>
+        </div>
+
+        <div class="objekte-erstellen">
+            <h4>Objekte erstellen: Literalschreibweise</h4>
+            <p>Die Literalschreibweise ist die einfachste und gängigste Möglichkeit,
+                um Objekte zu erstellen. (Es gibt noch andere Vorgehensweisen.)
+            </p>
+            <p>Das Objekt bestehet aus den geschweiften Klammern und deren Inhalt. Es wird in der Variable "hotel"
+                gespeichert, sodass Sie als hotel-Objekt darauf verweisen kann. Zwischen den Schlüsseln und ihren Werten
+                steht jeweils
+                ein Doppelpunkt, zwischen dden einzelnen Eigenschaft und Methoden jeweils ein Komma.
+                (Hinter ddem letzten Wert steht kein Komma mehr.)
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                var hotel = {<br />
+                <br />
+                name: "Quay",<br />
+                rooms: 40,<br />
+                booked: 25,<br />
+                <br />
+                checkAvailability:function() {<br />
+                return this.rooms - this.booked;<br />
+                } <br />
+                <br />
+                };
+            </div>
+        </div>
+        <h1>If-Anweisungen</h1>
+        <hr class="hr-1" />
+        <div class="if-anweisungen">
+            <h4>If-Anweisungen</h4>
+            <p>Eine if-Anweisung prüft eine Bedingung (oder wertet sie aus). Ist
+                die Bedingung "true", werden die Anweisungen im nachfolgenden Codeblock ausgeführt.
+
+            </p>
+            <p>Beispiel</p>
+            <div class="code-gleich">
+                if (scorde >= 50) {<br />
+                congratulate();<br />
+                }
+            </div>
+            <p>Ergibt die Bedingung <style>
+                    .true {
+                        color: green;
+                    }
+                </style><span class="true">"true"</span>, so wird der nachfolgende Codeblock ausgeführt
+                (also
+                der Codeblock ausgeführt (also der Codeblock zwischen den nächsten geschweiften Klammern).
+            </p>
+            <p>
+                Ergibt die Bedingung <style>
+                    .false {
+                        color: red;
+                    }
+                </style><span class="false">"false"</span>, werden die Bedingungen in dem Codeblock nicht ausgeführt.
+                (Das
+                Skript wird am Ende des Codeblocks fortgesetzt.)
+            </p>
+        </div>
+
+        <div class="if-else">
+            <h4>If...else-Anweisungen</h4>
+            <p>Auch if...else-Anweisungen prüfen eine Bedingung. Beim Ergebnis <span class="true">"true"</span>
+                wird der erste Codeblock ausgeführt, bei <span class="false">"false"</span>der zweite.</p>
+            <div class="code-gleich"> if (score >= 50) {<br />
+                congratulate(); <br />
+                }<br />
+                else {<br />
+                encourage();<br />
+                }
+            </div>
+        </div>
+
+
+        <h1>Switch-Anweisungen</h1>
+        <hr class="hr-1"/>
+        <div class="switch-anweisungen">
+            <h4>Switch erstellen</h4>
+            <p></p>
         </div>
 
 
 
-    </main>
 
+    </main>
     <footer id="footer-titel">
         <a href="www.instagram.com"><img src="bilder/instagram-logo.svg" id="instagram-logo" /></a>
 
